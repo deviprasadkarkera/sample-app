@@ -1,14 +1,7 @@
-<div class="wrapper">
-  <div class="container">
-    <header>
-      <div class="brand">{{title}}</div>
-      <nav class="navigation">
-          <a routerLink="/product-list">Products</a>
-          <a routerLink="/dashboard">Dashboard</a>
-      </nav>
-    </header>
-    <section class="body">
-      <router-outlet></router-outlet>
-    </section>
+<div id="container">
+  <app-sidebar></app-sidebar>
+
+  <div id="content">
+    <router-outlet></router-outlet>
   </div>
 </div>

@@ -13,6 +13,7 @@ import {ProductSearchComponent} from './product-search/product-search.component'
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {environment} from "../environments/environment";
 import {AngularFirestoreModule} from "@angular/fire/firestore";
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {AngularFirestoreModule} from "@angular/fire/firestore";
     ProductDetailsComponent,
     ProductAddComponent,
     ProductSearchComponent,
-    DashboardComponent
+    DashboardComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
