@@ -1,7 +1,24 @@
-<div id="container">
-  <app-sidebar></app-sidebar>
-
-  <div id="content">
-    <router-outlet></router-outlet>
+<div class="wrapper">
+  <div class="container">
+    <header>
+      <div class="brand">{{title}}</div>
+      <nav class="navigation">
+        <a routerLink="/product-list">Products</a>
+        <a routerLink="/dashboard">Dashboard</a>
+        <button routerLink="/addProduct" style="background:green;">ADD PRODUCT</button>
+        <button routerLink="/editProduct" style="background:orange;">EDIT PRODUCT</button>
+      </nav>
+    </header>
+    <section class="body">
+      <router-outlet></router-outlet>
+    </section>
   </div>
 </div>
+
+<!--<div id="container">-->
+<!--  <app-sidebar></app-sidebar>-->
+
+<!--  <div id="content">-->
+<!--    <router-outlet></router-outlet>-->
+<!--  </div>-->
+<!--</div>-->

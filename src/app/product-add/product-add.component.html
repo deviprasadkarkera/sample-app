@@ -1,3 +1,61 @@
-<p>
-  product-add works!
-</p>
+<form [formGroup]="addProductForm" (ngSubmit)="OnSubmit()">
+  <div>
+    <label>ID:</label>
+    <input type="text"
+           formControlName="id">
+    <span
+      *ngIf="!addProductForm.get('id').valid && addProductForm.get('id').touched">Required</span>
+  </div>
+  <div>
+    <label>IMAGE:</label>
+    <input type="text"
+           formControlName="imageUrl">
+    <span
+      *ngIf="!addProductForm.get('imageUrl').valid && addProductForm.get('imageUrl').touched">Required</span>
+  </div>
+  <div>
+    <label>PRIZE:</label>
+    <input type="text"
+           formControlName="price">
+    <span
+      *ngIf="!addProductForm.get('price').valid && addProductForm.get('price').touched">Required</span>
+  </div>
+  <div>
+    <label>SIZE:</label>
+    <input type="text"
+           formControlName="size">
+    <span
+      *ngIf="!addProductForm.get('size').valid && addProductForm.get('size').touched">Required</span>
+  </div>
+  <div>
+    <label>BRAND:</label>
+    <input type="text"
+           formControlName="brand">
+    <span
+      *ngIf="!addProductForm.get('brand').valid && addProductForm.get('brand').touched">Required</span>
+  </div>
+  <div>
+    <label>QUANTITY:</label>
+    <input type="text"
+           formControlName="quantity">
+    <span
+      *ngIf="!addProductForm.get('quantity').valid && addProductForm.get('quantity').touched">Required</span>
+  </div>
+  <div>
+    <div>
+      <label>DESCRIPTION:</label>
+      <input type="text"
+             formControlName="description">
+      <!--        <span-->
+      <!--          *ngIf="!addProductForm.get('userData.email').valid && addProductForm.get('userData.email').touched">Invalid Email</span>-->
+
+    </div>
+    <span *ngIf="!addProductForm.valid && addProductForm.touched">Fill the required fields</span>
+  </div>
+  <div>
+    <button class="submit" type="submit">Submit</button>
+    <button class="update" type="submit" (click)="updateForm()">Update</button>
+
+  </div>
+</form>
+
