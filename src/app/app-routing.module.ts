@@ -7,13 +7,13 @@ import {DashboardComponent} from './dashboard/dashboard.component';
 import {ProductAddComponent} from './product-add/product-add.component';
 
 const routes: Routes = [
-  //{path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+  // {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: 'product-list', component: ProductListComponent},
   {path: 'product-details/:id', component: ProductDetailsComponent},
   {path: 'search', component: ProductSearchComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'addProduct', component: ProductAddComponent},
-  {path: 'editProduct', component: ProductAddComponent},
+  {path: 'editProduct/:flag/:id', component: ProductAddComponent},
 
 ];
 

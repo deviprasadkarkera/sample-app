@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {ProductService} from './product-service.service';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Sample Products';
+  constructor(private router: Router) {}
+  showDetails() {
+    // this.router.navigate('./product-details/:1224');
+  }
 }

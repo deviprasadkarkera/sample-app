@@ -1,0 +1,30 @@
+:host {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.discription {
+  margin: 30px;
+  display: block;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 5px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+}
+img {
+  height: 200px;
+  width: 200px;
+}

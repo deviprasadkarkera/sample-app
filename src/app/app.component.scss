@@ -1,0 +1,33 @@
+.navigation{
+  padding: 10px;
+  background-color:blueviolet;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.addProduct {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.search {
+  padding: 10px;
+  width: 400px;
+  box-shadow: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}

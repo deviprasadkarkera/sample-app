@@ -1,3 +1,14 @@
-<p>
-  product-details works!
-</p>
+<div *ngIf="product">
+   <img *ngIf="ID == product.id" [src]="product?.imageUrl">
+</div>
+<div class="discription">
+  <div class="details">
+    <label>ID: {{ID}}</label>
+    <label>BrandName: {{product?.brand}}</label>
+    <label>Price: {{product?.price}}</label>
+  </div>
+  <button routerLink="/editProduct/1/{{ID}}">EDIT PRODUCT</button>
+  <button (click)="showWareHouse()">WareHouse</button>
+  <button (click)="deleteContents()">Delete</button>
+</div>
+

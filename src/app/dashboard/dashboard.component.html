@@ -1,14 +1,28 @@
-<nav>
-  <ul>
-    <li>
-      <a routerLink="">
-        <i class="material-icons">supervised_user_circle</i>
-      </a>
-    </li>
-    <li>
-      <a routerLink="posts">
-        <i class="material-icons">message</i>
-      </a>
-    </li>
-  </ul>
-</nav>
+<!--<nav>-->
+<!--  <ul>-->
+<!--    <li>-->
+<!--      <a routerLink="">-->
+<!--        <i class="material-icons">supervised_user_circle</i>-->
+<!--      </a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a routerLink="posts">-->
+<!--        <i class="material-icons">message</i>-->
+<!--      </a>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</nav>-->
+<!--<input type="text" placeholder="Search" class="search" (keyup)="searchProduct()" [formControl]="search">-->
+<section class="header">
+  <input type="text" placeholder="Search" class="search-input">
+<!--  <button type="submit"> <img src="search-more.png" class="search-btn" >-->
+<!--  </button>-->
+</section>
+<div class="productList">
+<div class="products" *ngFor="let product of products" routerLink="/product-details/{{product?.id}}">
+    <img  [src]="product?.imageUrl">
+    <p>{{product?.brand}}</p>
+    <p>{{product?.price | currency: 'INR'}}</p>
+</div>
+</div>
+<!--<app-product-details></app-product-details>-->
