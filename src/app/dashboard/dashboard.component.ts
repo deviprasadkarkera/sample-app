@@ -16,7 +16,6 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     this.search = new FormControl();
     this.productService.getProducts().subscribe(response => {
-      this.products = response;
     });
   }
   searchProduct() {
